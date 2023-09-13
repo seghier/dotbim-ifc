@@ -8,31 +8,20 @@ Converts to and from IFC and dotbim.
 
 You need to install dotbimpy library (https://github.com/paireks/dotbimpy):
 
+Tested with Python38
+
 ```cmd
 pip install dotbimpy
+pip install ifcopenshell
+pip install PyQt5
 ```
 
-You also need IfcOpenShell 0.7.0 installed. You can get it from here: https://github.com/IfcOpenBot/IfcOpenShell/commit/883b8a523c63027f2f6c91650385d47edba5521b#commitcomment-65879927
-Place this folder in your project where this script is located.
+Open: run.bat
 
-## How to use it
 
-Going to ...
 
-```python
-ifc = ifcopenshell.open("foobar.ifc")
-ifc2dotbim = Ifc2Dotbim(ifc)
-ifc2dotbim.execute()
-ifc2dotbim.write("foobar.bim")
-```
 
-Coming from ...
 
-```python
-dotbim = dotbimpy.File.read("foobar.bim")
-dotbim2ifc = Dotbim2Ifc(dotbim)
-dotbim2ifc.execute()
-dotbim2ifc.write("foobar.ifc")
-```
+
 
 
